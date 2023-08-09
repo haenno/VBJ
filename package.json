@@ -1,7 +1,7 @@
 {
-  "name": "vite",
-  "description": "Include Bootstrap's source Sass and individual JavaScript plugins with Vite.",
-  "version": "0.0.0",
+  "name": "haenno-vite-jwt",
+  "description": "A frontend build with Vite and Bootstrap for a backend with Django REST framework and Simple JWT. https://github.com/haenno/vite-jwt ",
+  "version": "0.0.1",
   "private": true,
   "repository": "twbs/examples",
   "license": "MIT",

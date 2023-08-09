@@ -1,12 +1,9 @@
 <script setup>
-
 // example of using a store: increment a counter
-import { useCounterStore } from '@/store/counter.js'
-const counter = useCounterStore()
-counter.increment()
-
+import { useCounterStore } from "@/store/counter.js";
+const counter = useCounterStore();
+counter.increment();
 </script>
-
 
 <template>
   <div>Current count from pinia store: {{ counter.count }}</div>
@@ -15,4 +12,3 @@ counter.increment()
   </div>
   <!-- Access the state directly from the store -->
 </template>
-

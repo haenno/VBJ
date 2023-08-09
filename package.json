@@ -3,18 +3,30 @@
   "description": "A frontend build with Vite and Bootstrap for a backend with Django REST framework and Simple JWT. https://github.com/haenno/vite-jwt ",
   "version": "0.0.1",
   "private": true,
-  "repository": "twbs/examples",
+  "repository": "haenno/vite-jwt",
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build --emptyOutDir",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "format": "prettier --write src/"    
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.1"
+    "pinia": "^2.1.4", 
+    "vue-router": "^4.2.4", 
+    "vue": "^3.3.4",     
+    "bootstrap": "^5.3.1",
+    "@popperjs/core": "^2.11.8"
   },
   "devDependencies": {
+    "@rushstack/eslint-patch": "^1.3.2",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vue/eslint-config-prettier": "^8.0.0",
+    "eslint": "^8.45.0",
+    "eslint-plugin-vue": "^9.15.1",
+    "prettier": "^3.0.0",
     "sass": "^1.64.2",
-    "vite": "^4.4.9"
+    "vite": "^4.4.6"
   }
 }

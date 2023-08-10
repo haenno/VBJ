@@ -1,7 +1,8 @@
 // Import our custom CSS
 import "./scss/styles.scss";
 
-
+import "./js/color-modes.js";
+import "./js/main.js";
 
 import { createApp } from "vue";
 import { createPinia } from "pinia";

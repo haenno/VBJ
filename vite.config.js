@@ -6,6 +6,7 @@ import vue from '@vitejs/plugin-vue'
 const path = require('path')
 
 export default defineConfig({
+  base: '/vite-bootstrap-jwt/',
   plugins: [
     vue(),
   ],

@@ -20,10 +20,7 @@ document.querySelectorAll('[data-bs-toggle="popover"]').forEach((popover) => {
       class="d-flex justify-content-between align-items-md-center pb-3 mb-5 border-bottom"
     >
       <h1 class="h4">
-        <a
-          href="/"
-          class="d-flex align-items-center text-dark text-decoration-none"
-        >
+        <a href="/" class="d-flex align-items-center text-decoration-none">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"

@@ -2,7 +2,7 @@
 import "./scss/styles.scss";
 
 import "./js/color-modes.js";
-import "./js/own.js";
+import "./js/main.js";
 
 import { createApp } from "vue";
 import { createPinia } from "pinia";

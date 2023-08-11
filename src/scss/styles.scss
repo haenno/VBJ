@@ -9,7 +9,6 @@
 // `$body-color` or write more CSS that override's Bootstrap's CSS like so:
 // `body { color: red; }`.
 
-
 //
 // Bring in Bootstrap
 //
@@ -28,12 +27,12 @@
 $enable-gradients: true;
 $enable-shadows: true;
 
-$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 
 // Customize some defaults
 $body-color: #333;
 $body-bg: #fff;
-$border-radius: .4rem;
+$border-radius: 0.4rem;
 $success: #7952b3;
 
 // Required
@@ -82,7 +81,6 @@ $success: #7952b3;
 // Utilities
 @import "bootstrap/scss/utilities/api";
 
-
 //
 // Custom styles
 //
@@ -90,7 +88,6 @@ $success: #7952b3;
 @import "icon-list";
 
 body {
-  
 }
 
 .bi {
@@ -101,15 +98,15 @@ body {
 
 .color-modes {
   .dropdown-menu {
-    padding: .25rem;
+    padding: 0.25rem;
 
     li + li {
-      margin-top: .125rem;
+      margin-top: 0.125rem;
     }
   }
 
   .dropdown-item {
-    @include border-radius(.25rem);
+    @include border-radius(0.25rem);
   }
 
   .active {

@@ -68,7 +68,6 @@ document.querySelectorAll('[data-bs-toggle="popover"]').forEach((popover) => {
       Toggle offcanvas
     </button>
 
-
     <div
       class="offcanvas offcanvas-end"
       tabindex="-1"

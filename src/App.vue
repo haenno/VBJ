@@ -3,8 +3,6 @@ import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
-<div class="min-vh-100 flex">
-
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
@@ -152,14 +150,15 @@ import { RouterLink, RouterView } from "vue-router";
     </nav>
   </header>
 
-  <div class="min-vh-100 flex" style="background-image: url('https://picsum.photos/1920/1080'); background-size: cover;">
-  <div class="flex p-2" >
-    <div class="flex m-2 p-2 bg-white rounded opacity-75 overflow-hidden text-break">
-      <router-view />
+  <div class="flex p-1 p-xs-1 p-sm-2 p-md-3 p-lg-4 p-xl-5 p-xxl-5">
+    <div class="card text-bg-primary opacity-75">
+      <div class="card-body">
+        <div class="card-text overflow-hidden text-break">
+          <router-view />
+        </div>
+      </div>
     </div>
   </div>
-</div>
-</div>
 </template>
 
 <style scoped></style>

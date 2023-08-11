@@ -1,9 +1,9 @@
 {
-  "name": "haenno-vite-jwt",
-  "description": "A frontend build with Vite and Bootstrap for a backend with Django REST framework and Simple JWT. https://github.com/haenno/vite-jwt ",
+  "name": "VBJ",
+  "description": "A frontend build with Vite and Bootstrap for a backend with Django REST framework and Simple JWT. https://github.com/haenno/VBJ",
   "version": "0.0.1",
   "private": true,
-  "repository": "haenno/vite-jwt",
+  "repository": "haenno/VBJ",
   "license": "MIT",
   "scripts": {
     "dev": "vite",

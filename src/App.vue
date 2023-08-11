@@ -17,7 +17,7 @@ import {} from "bootstrap";
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <span class="navbar-brand flex-shrink-1">haenno-vite-jwt</span>
+        <span class="navbar-brand flex-shrink-1">VBJ</span>
 
         <div
           class="navbar-collapse collapse flex-grow-1 justify-content-center"

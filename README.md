@@ -1,9 +1,9 @@
-# vite-bootstrap-frontend-for-Django-rest-framework-simple-jwt
+# VBJ: Vite Bootstrap JWT
 A frontend build with Vite and Bootstrap for a backend with Django REST framework and Simple JWT.
 
 **This project is uncomplete and still a work in progress.**
 
-A live working **demo** is available at <https://haenno.github.io/vite-bootstrap-jwt/>.
+A live working **demo** is available at <https://haenno.github.io/VBJ/>.
 
 ## Todo-List
 

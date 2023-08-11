@@ -1,5 +1,8 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
+
+// Import Bootstrap components
+import {} from "bootstrap";
 </script>
 
 <template>

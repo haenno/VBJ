@@ -3,14 +3,6 @@
 import { useCounterStore } from "@/store/counter.js";
 const counter = useCounterStore();
 counter.increment();
-
-// Import only the Bootstrap components we need
-import { Popover } from "bootstrap";
-
-// Create an example popover
-document.querySelectorAll('[data-bs-toggle="popover"]').forEach((popover) => {
-  new Popover(popover);
-});
 </script>
 
 <template>
@@ -67,16 +59,6 @@ document.querySelectorAll('[data-bs-toggle="popover"]').forEach((popover) => {
     >
       Toggle offcanvas
     </button>
-    <a
-      id="popoverButton"
-      class="text-success"
-      href="#"
-      role="button"
-      data-bs-toggle="popover"
-      title="Custom popover"
-      data-bs-content="This is a Bootstrap popover."
-      >Example popover</a
-    >
 
     <div
       class="offcanvas offcanvas-end"

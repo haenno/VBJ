@@ -43,6 +43,15 @@ import {} from "bootstrap";
               >
             </li>
             <li class="nav-item">
+              <RouterLink
+                class="nav-link"
+                :class="$route.name == 'cat-facts' ? 'active' : ''"
+                aria-current="page"
+                :to="{ name: 'cat-facts' }"
+                >Cat Facts (Axios/REST-API)</RouterLink
+              >
+            </li>            
+            <li class="nav-item">
               <a class="nav-link disabled">Disabled</a>
             </li>
           </ul>

@@ -163,7 +163,7 @@ import {} from "bootstrap";
   </header>
 
   <div class="flex p-1 p-xs-1 p-sm-2 p-md-3 p-lg-4 p-xl-5 p-xxl-5">
-    <div class="card text-bg-primary opacity-75">
+    <div class="card text-bg-primary opacity-98">
       <div class="card-body">
         <div class="card-text overflow-hidden text-break">
           <router-view />

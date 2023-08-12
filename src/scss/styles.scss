@@ -35,6 +35,24 @@ $body-bg: #fff;
 $border-radius: 0.4rem;
 $success: #7952b3;
 
+// add custom opacity
+$utilities: (
+  "opacity": (
+    property: opacity,
+    class: opacity,
+    state: hover,
+    values: (
+      0: 0,
+      25: .25,
+      50: .5,
+      75: .75,
+      98: .98,
+      100: 1,
+    )
+  )
+);
+
+
 // Required
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";

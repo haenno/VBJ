@@ -103,33 +103,16 @@ $utilities: (
 // Custom styles
 //
 
-@import "icon-list";
 
-body {
-}
-
+// for dark mode selector
 .bi {
   width: 1em;
   height: 1em;
   fill: currentcolor;
 }
-
 .color-modes {
-  .dropdown-menu {
-    padding: 0.25rem;
-
-    li + li {
-      margin-top: 0.125rem;
-    }
-  }
-
-  .dropdown-item {
-    @include border-radius(0.25rem);
-  }
-
   .active {
     font-weight: 600;
-
     .bi {
       display: block !important; // stylelint-disable-line declaration-no-important
     }

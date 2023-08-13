@@ -3,6 +3,10 @@ import { RouterLink, RouterView } from "vue-router";
 
 // Import Bootstrap components
 import {} from "bootstrap";
+
+
+// fix bootstrap navbar collapse
+
 </script>
 
 <template>
@@ -30,7 +34,8 @@ import {} from "bootstrap";
                 :class="$route.name == 'home' ? 'active' : ''"
                 aria-current="page"
                 :to="{ name: 'home' }"
-                >Home</RouterLink
+                ><span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                Home</span></RouterLink
               >
             </li>
             <li class="nav-item">
@@ -39,7 +44,9 @@ import {} from "bootstrap";
                 :class="$route.name == 'about' ? 'active' : ''"
                 aria-current="page"
                 :to="{ name: 'about' }"
-                >About</RouterLink
+                ><span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                About
+              </span></RouterLink
               >
             </li>
             <li class="nav-item">
@@ -48,7 +55,10 @@ import {} from "bootstrap";
                 :class="$route.name == 'cat-facts' ? 'active' : ''"
                 aria-current="page"
                 :to="{ name: 'cat-facts' }"
-                >Cat Facts (Axios/REST-API)</RouterLink
+                ><span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+
+               Cat Facts (Axios/REST-API)
+              </span></RouterLink
               >
             </li>            
             <li class="nav-item">

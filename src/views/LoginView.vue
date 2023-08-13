@@ -1,17 +1,4 @@
-<script >
 
-export default {
-  name: 'LoginView',
-
-  data() {
-    return {
-      userIsLoggedIn : false
-    }
-  },
-  methods: {
-  }
-}
-</script>
 
 <template>
   <div>

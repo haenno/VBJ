@@ -8,7 +8,6 @@ counter.increment();
 <template>
   <div>Current count from pinia store: {{ counter.count }}</div>
   <div class="container py-4 px-3 mx-auto">
-
     <h1>Build Bootstrap with Vite</h1>
     <div class="col-lg-8 px-0">
       <p class="fs-4">
@@ -16,9 +15,7 @@ counter.increment();
         with <a href="https://getbootstrap.com/">Bootstrap 5</a> and uses Vite
         to compile and bundle our Sass and JavaScript.
       </p>
-      <p>
-        If this button appears blue you've done it!
-      </p>
+      <p>If this button appears blue you've done it!</p>
     </div>
 
     <button
@@ -67,6 +64,5 @@ counter.increment();
         </div>
       </div>
     </div>
-
   </div>
 </template>

@@ -11,7 +11,6 @@ export const jwtAuthStore = defineStore("jwtAuthStore", () => {
     userIsLoggedIn = false;
     userRefreshToken = "";
     userAccessToken = "";
-
   }
 
   function isLoggedIn() {
@@ -25,5 +24,14 @@ export const jwtAuthStore = defineStore("jwtAuthStore", () => {
     userRefreshToken = token;
   }
 
-  return { userIsLoggedIn, userId, userRefreshToken, userAccessToken, isLoggedIn, logout, setAccessToken, setRefreshToken };
+  return {
+    userIsLoggedIn,
+    userId,
+    userRefreshToken,
+    userAccessToken,
+    isLoggedIn,
+    logout,
+    setAccessToken,
+    setRefreshToken,
+  };
 });

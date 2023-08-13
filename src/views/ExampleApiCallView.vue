@@ -1,38 +1,45 @@
-<script >
-import axios from 'axios'
+<script>
+import axios from "axios";
 
 export default {
-  name: 'ExampleApiCallView',
+  name: "ExampleApiCallView",
 
   data() {
     return {
-      facts: []
-    }
+      facts: [],
+    };
   },
   methods: {
     getFact() {
       axios
-        .get('https://catfact.ninja/fact')
+        .get("https://catfact.ninja/fact")
         .then((response) => {
-          this.facts.unshift(response.data.fact)
+          this.facts.unshift(response.data.fact);
         })
         .catch((error) => {
-          console.log(error)
-        })
-    }
-  }
-}
+          console.log(error);
+        });
+    },
+  },
+};
 </script>
 
 <template>
   <div>
-    <h1>Cat facts from an API </h1>
-    <button @click="getFact" class="btn btn-primary mb-2">Get a cat fact</button>
+    <h1>Cat facts from an API</h1>
+    <button @click="getFact" class="btn btn-primary mb-2">
+      Get a cat fact
+    </button>
 
     <div class="list-group">
-      <button type="button" class="list-group-item list-group-item-action" v-for="fact in facts" :key="fact.id">
-      {{ fact }}</button>
+      <button
+        type="button"
+        class="list-group-item list-group-item-action"
+        v-for="fact in facts"
+        :key="fact.id"
+      >
+        {{ fact }}
+      </button>
     </div>
-
   </div>
 </template>

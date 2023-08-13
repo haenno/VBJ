@@ -4,9 +4,7 @@ import { RouterLink, RouterView } from "vue-router";
 // Import Bootstrap components
 import {} from "bootstrap";
 
-
 // fix bootstrap navbar collapse
-
 </script>
 
 <template>
@@ -22,71 +20,87 @@ import {} from "bootstrap";
           <span class="navbar-toggler-icon"></span>
         </button>
         <span class="navbar-brand flex-shrink-1">VBJ</span>
-        
+
         <div
-        class="navbar-collapse collapse flex-grow-1 justify-content-center"
-        id="navbar-content"
+          class="navbar-collapse collapse flex-grow-1 justify-content-center"
+          id="navbar-content"
         >
-        <ul class="navbar-nav mx-auto">
-          
-          <li class="nav-item">
-            <RouterLink
-              class="nav-link"
-              :class="$route.name == 'home' ? 'active' : ''"
-              aria-current="page"
-              :to="{ name: 'home' }"
-              ><span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-              Home</span></RouterLink
-            >
-          </li>
-
-
-            <li class="nav-item dropdown" >
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-Examples          </a>
-          <ul class="dropdown-menu">
-
-            <li >
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
               <RouterLink
-              class="dropdown-item"
-                :class="$route.name == 'examplebootstrap' ? 'active' : ''"
+                class="nav-link"
+                :class="$route.name == 'home' ? 'active' : ''"
                 aria-current="page"
-                :to="{ name: 'examplebootstrap' }"
-                ><span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-                  Boostrap
-              </span></RouterLink
+                :to="{ name: 'home' }"
+                ><span
+                  data-bs-toggle="collapse"
+                  data-bs-target=".navbar-collapse.show"
+                >
+                  Home</span
+                ></RouterLink
               >
             </li>
-            <li >
-              <RouterLink
-              class="dropdown-item"
-                :class="$route.name == 'exampleapicall' ? 'active' : ''"
-                aria-current="page"
-                :to="{ name: 'exampleapicall' }"
-                ><span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-               Consume Rest API
-              </span></RouterLink
-              >
-            </li>            
-            
-            <li >
-              <a               class="dropdown-item disabled">Disabled</a>
-            </li>
-          </ul>
-        </li>
-            
 
-   
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Examples
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <RouterLink
+                    class="dropdown-item"
+                    :class="$route.name == 'examplebootstrap' ? 'active' : ''"
+                    aria-current="page"
+                    :to="{ name: 'examplebootstrap' }"
+                    ><span
+                      data-bs-toggle="collapse"
+                      data-bs-target=".navbar-collapse.show"
+                    >
+                      Boostrap
+                    </span></RouterLink
+                  >
+                </li>
+                <li>
+                  <RouterLink
+                    class="dropdown-item"
+                    :class="$route.name == 'exampleapicall' ? 'active' : ''"
+                    aria-current="page"
+                    :to="{ name: 'exampleapicall' }"
+                    ><span
+                      data-bs-toggle="collapse"
+                      data-bs-target=".navbar-collapse.show"
+                    >
+                      Consume Rest API
+                    </span></RouterLink
+                  >
+                </li>
+
+                <li>
+                  <a class="dropdown-item disabled">Disabled</a>
+                </li>
+              </ul>
+            </li>
+
             <li class="nav-item">
               <RouterLink
                 class="nav-link"
                 :class="$route.name == 'login' ? 'active' : ''"
                 aria-current="page"
                 :to="{ name: 'login' }"
-                ><span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-Login              </span></RouterLink
+                ><span
+                  data-bs-toggle="collapse"
+                  data-bs-target=".navbar-collapse.show"
+                >
+                  Login
+                </span></RouterLink
               >
-            </li>            
+            </li>
           </ul>
 
           <div class="flex-shrink-1">
@@ -131,10 +145,10 @@ Login              </span></RouterLink
                   data-bs-toggle="dropdown"
                   data-bs-display="static"
                 >
-                <span class="ms-2" id="bd-theme-text">  
-                <svg class="bi my-1 me-2 theme-icon-active">
-                    <use href="#circle-half"></use>
-                  </svg>
+                  <span class="ms-2" id="bd-theme-text">
+                    <svg class="bi my-1 me-2 theme-icon-active">
+                      <use href="#circle-half"></use>
+                    </svg>
                   </span>
                 </button>
                 <ul
@@ -196,20 +210,20 @@ Login              </span></RouterLink
     </nav>
   </header>
 
-  <div class="p-1 p-xs-1 p-sm-2 p-md-3 p-lg-4 p-xl-5 p-xxl-5" style="align-items: normal; justify-content: center; display: flex; ">
-
-<div class="bg-white mx-4 p-8 rounded shadow-md opacity-95">
-  <div class="card text-bg-primary opacity-98">
-      <div class="card-body">
-        <div class="card-text overflow-hidden text-break">
-          <router-view />
+  <div
+    class="p-1 p-xs-1 p-sm-2 p-md-3 p-lg-4 p-xl-5 p-xxl-5"
+    style="align-items: normal; justify-content: center; display: flex"
+  >
+    <div class="bg-white mx-4 p-8 rounded shadow-md opacity-95">
+      <div class="card text-bg-primary opacity-98">
+        <div class="card-body">
+          <div class="card-text overflow-hidden text-break">
+            <router-view />
+          </div>
         </div>
       </div>
     </div>
-
   </div>
-  </div>
-
 </template>
 
 <style scoped></style>

@@ -43,15 +43,14 @@ $utilities: (
     state: hover,
     values: (
       0: 0,
-      25: .25,
-      50: .5,
-      75: .75,
-      98: .98,
+      25: 0.25,
+      50: 0.5,
+      75: 0.75,
+      98: 0.98,
       100: 1,
-    )
-  )
+    ),
+  ),
 );
-
 
 // Required
 @import "bootstrap/scss/functions";
@@ -102,7 +101,6 @@ $utilities: (
 //
 // Custom styles
 //
-
 
 // for dark mode selector
 .bi {

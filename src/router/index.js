@@ -21,7 +21,7 @@ const router = createRouter({
       path: "/exampleapicall",
       name: "exampleapicall",
       component: ExampleApiCallView,
-    },    
+    },
     {
       path: "/examplebootstrap",
       name: "examplebootstrap",
@@ -30,8 +30,8 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import("/views/ExampleBootstrap.vue"),
     },
-            // default redirect to home page
-            { path: '/:pathMatch(.*)*', name: 'notfound', component: NotFoundView}
+    // default redirect to home page
+    { path: "/:pathMatch(.*)*", name: "notfound", component: NotFoundView },
   ],
 });
 

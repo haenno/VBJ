@@ -2,7 +2,7 @@
 import axios from 'axios'
 
 export default {
-  name: 'CatFactsView',
+  name: 'ExampleApiCallView',
 
   data() {
     return {

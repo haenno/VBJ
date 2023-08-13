@@ -14,7 +14,7 @@ import {} from "bootstrap";
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <button
-          class="navbar-toggler flex-grow-sm-1 flex-grow-0 me-2"
+          class="navbar-toggler flex-grow-sm-0 flex-grow-0 me-2"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbar-content"
@@ -22,48 +22,71 @@ import {} from "bootstrap";
           <span class="navbar-toggler-icon"></span>
         </button>
         <span class="navbar-brand flex-shrink-1">VBJ</span>
-
+        
         <div
-          class="navbar-collapse collapse flex-grow-1 justify-content-center"
-          id="navbar-content"
+        class="navbar-collapse collapse flex-grow-1 justify-content-center"
+        id="navbar-content"
         >
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
+        <ul class="navbar-nav mx-auto">
+          
+          <li class="nav-item">
+            <RouterLink
+              class="nav-link"
+              :class="$route.name == 'home' ? 'active' : ''"
+              aria-current="page"
+              :to="{ name: 'home' }"
+              ><span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+              Home</span></RouterLink
+            >
+          </li>
+
+
+            <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+Examples          </a>
+          <ul class="dropdown-menu">
+
+            <li >
               <RouterLink
-                class="nav-link"
-                :class="$route.name == 'home' ? 'active' : ''"
+              class="dropdown-item"
+                :class="$route.name == 'examplebootstrap' ? 'active' : ''"
                 aria-current="page"
-                :to="{ name: 'home' }"
+                :to="{ name: 'examplebootstrap' }"
                 ><span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-                Home</span></RouterLink
-              >
-            </li>
-            <li class="nav-item">
-              <RouterLink
-                class="nav-link"
-                :class="$route.name == 'about' ? 'active' : ''"
-                aria-current="page"
-                :to="{ name: 'about' }"
-                ><span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-                About
+                  Boostrap
               </span></RouterLink
               >
             </li>
-            <li class="nav-item">
+            <li >
               <RouterLink
-                class="nav-link"
-                :class="$route.name == 'cat-facts' ? 'active' : ''"
+              class="dropdown-item"
+                :class="$route.name == 'exampleapicall' ? 'active' : ''"
                 aria-current="page"
-                :to="{ name: 'cat-facts' }"
+                :to="{ name: 'exampleapicall' }"
                 ><span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-
-               Cat Facts (Axios/REST-API)
+               Consume Rest API
               </span></RouterLink
               >
             </li>            
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+            
+            <li >
+              <a               class="dropdown-item disabled">Disabled</a>
             </li>
+          </ul>
+        </li>
+            
+
+   
+            <li class="nav-item">
+              <RouterLink
+                class="nav-link"
+                :class="$route.name == 'login' ? 'active' : ''"
+                aria-current="page"
+                :to="{ name: 'login' }"
+                ><span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+Login              </span></RouterLink
+              >
+            </li>            
           </ul>
 
           <div class="flex-shrink-1">
@@ -108,13 +131,14 @@ import {} from "bootstrap";
                   data-bs-toggle="dropdown"
                   data-bs-display="static"
                 >
-                  <svg class="bi my-1 me-2 theme-icon-active">
+                <span class="ms-2" id="bd-theme-text">  
+                <svg class="bi my-1 me-2 theme-icon-active">
                     <use href="#circle-half"></use>
                   </svg>
-                  <span class="ms-2" id="bd-theme-text">Toggle theme</span>
+                  </span>
                 </button>
                 <ul
-                  class="dropdown-menu dropdown-menu-end"
+                  class="dropdown-menu dropdown-menu-lg-end"
                   aria-labelledby="bd-theme"
                   style="--bs-dropdown-min-width: 8rem"
                 >

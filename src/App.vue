@@ -196,15 +196,20 @@ Login              </span></RouterLink
     </nav>
   </header>
 
-  <div class="flex p-1 p-xs-1 p-sm-2 p-md-3 p-lg-4 p-xl-5 p-xxl-5">
-    <div class="card text-bg-primary opacity-98">
+  <div class="p-1 p-xs-1 p-sm-2 p-md-3 p-lg-4 p-xl-5 p-xxl-5" style="align-items: normal; justify-content: center; display: flex; ">
+
+<div class="bg-white mx-4 p-8 rounded shadow-md opacity-95">
+  <div class="card text-bg-primary opacity-98">
       <div class="card-body">
         <div class="card-text overflow-hidden text-break">
           <router-view />
         </div>
       </div>
     </div>
+
   </div>
+  </div>
+
 </template>
 
 <style scoped></style>

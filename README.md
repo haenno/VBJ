@@ -10,8 +10,12 @@ A live working **demo** is available at <https://haenno.github.io/VBJ/>.
 - [x] Setup Vite and Bootstrap
 - [x] Create a CI/CD pipeline with GitHub Actions
 - [x] Setup automatic deployment to GitHub Pages
-- [ ] Add axios
-- [ ] Implement a sample API call
+- [x] Add axios
+- [x] Implement a sample API call
+- [ ] Create the backend for testing (absolte bare minimum with Django REST framework and Simple JWT and all settings to default/standard)
+- [ ] Add Routes for login and logout
+- [ ] Add state management for ``"userIsLoggedIn"`` and token storage
+- [ ] Check possibility of deployment to mobile devices with <https://capacitorjs.com> and <https://ionicframework.com/>.
 - [ ] and more...
 
 ## Lifecycle
